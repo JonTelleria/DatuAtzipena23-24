@@ -1,13 +1,13 @@
-package main.java.dambi;
+package dambi;
 
 import java.time.LocalDate;
 
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-//import com.danibuiza.jaxb.ultimate.adapter.DateAdapter;
+
 
 /**
  * Country containing a name, a capital city, a foundation date and the continent it belongs to,
@@ -89,14 +89,12 @@ public class Country
         return foundation;
     }
 
-    /*
     @XmlElement( name = "Country_Foundation_Date" )
-    @XmlJavaTypeAdapter( DateAdapter.class ) */
+    //@XmlJavaTypeAdapter( DateAdapter.class )
     public void setFoundation( LocalDate foundation )
     {
         this.foundation = foundation;
     }
-    
 
     public String getContinent()
     {

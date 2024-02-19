@@ -1,4 +1,4 @@
-package main.java.dambi;
+package dambi;
 
 import java.io.File;
 import java.time.LocalDate;
